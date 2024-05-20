@@ -59,7 +59,7 @@ jobs:
         script: |
             sleep 40
             docker stop web && docker rm web
-            docker rmi rafarota/repaso
+            docker rmi rafarota/domingo
             docker run -d -p 80:8000 --name web rafarota/domingo
   
   # health_check_job:
